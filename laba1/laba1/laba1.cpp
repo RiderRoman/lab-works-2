@@ -10,8 +10,10 @@
 using namespace std;
 
 int menu52forall();
+
 void problem();
-string perevodv2_int(int num) {
+
+string perevodv2_int(int num) { // перевод в двоичную систему
     string str = "";
     int nuli, save = num;
     if (num < 0) {
@@ -102,7 +104,9 @@ string perevodv2_float(float num) {
         }
     }
     exponenta = exponenta + 127; // экспонента
+
     string strex = ""; // строка для экспоненты
+
     while (exponenta > 0) { // перевод экспоненты в двоичную запись
         if (exponenta % 2 == 1) strex = '1' + strex;
         else strex = '0' + strex;
